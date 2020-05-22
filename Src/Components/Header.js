@@ -32,8 +32,12 @@ function Header(){
 
 const styles = StyleSheet.create({
     container: {
+        position:'absolute',
+        top:0,
+        left:0,
+        right:0,
         height:60,
-        marginTop:Constants.statusBarHeight,
+        //marginTop:Constants.statusBarHeight,
         marginBottom:10, 
         flexDirection:'row',
         justifyContent:'space-between',
