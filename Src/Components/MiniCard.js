@@ -8,7 +8,7 @@ function MiniCard(props) {
     const {colors} = useTheme()
     const navigation = useNavigation()
     return (
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('VideoPlayer', {videoId: item.id.videoId})}>
+        <TouchableWithoutFeedback onPress={() => navigation.navigate('VideoPlayer', {item})}>
         <View style={{height:120, elevation:4, backgroundColor:colors.headerColor, flexDirection:'row', margin:10, marginBottom:0}}>
             <View style={{flex:2}}>
             <Image source={{uri:item.snippet.thumbnails.default.url}} style={{flex:1}} />
